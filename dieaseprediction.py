@@ -8,8 +8,8 @@ from sklearn.model_selection import train_test_split
 df = pd.read_csv('/training_data.csv')  
 
 
-X = df['symptoms']  # Symptoms in text format
-y = df['prognosis']  # Disease label
+X = df['symptoms']  
+y = df['prognosis']  
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
