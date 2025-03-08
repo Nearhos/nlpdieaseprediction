@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
 
-df = pd.read_csv('/disease_symptoms_dataset.csv')  # Assume dataset has 'symptoms' (text) and 'prognosis' (label)
+df = pd.read_csv('/training_data.csv')  
 
 
 X = df['symptoms']  # Symptoms in text format
